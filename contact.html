@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Ngao Sports - Get in touch with us for inquiries, registrations, and more.">
+    <title>Contact Us - Ngao Sports</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Ngao<span>Sports</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link">Events <i>▼</i></a>
+                    <ul class="dropdown">
+                        <li><a href="events.html#upcoming" class="dropdown-link">Upcoming Events</a></li>
+                        <li><a href="events.html#past" class="dropdown-link">Past Events</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Activities <i>▼</i></a>
+                    <ul class="dropdown">
+                        <li><a href="activities/football.html" class="dropdown-link">Football</a></li>
+                        <li><a href="activities/basketball.html" class="dropdown-link">Basketball</a></li>
+                        <li><a href="activities/skating.html" class="dropdown-link">Skating</a></li>
+                        <li><a href="activities/robotics.html" class="dropdown-link">Robotics</a></li>
+                        <li><a href="activities/chess.html" class="dropdown-link">Chess</a></li>
+                        <li><a href="activities/music.html" class="dropdown-link">Music</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with us today!</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section style="padding: 100px 0;">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info scroll-reveal-left">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions about our programs or want to join our community? We're here to help! Fill out the form and we'll get back to you as soon as possible.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i>📍</i>
+                            <div>
+                                <strong>Location</strong>
+                                <p>123 Sports Avenue, Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i>📧</i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>james.o.nderema@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i>📞</i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+254 700 123 456</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i>⏰</i>
+                            <div>
+                                <strong>Hours</strong>
+                                <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px;">
+                        <h4 style="margin-bottom: 15px; color: var(--dark-color);">Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook" style="background-color: var(--accent-color);">📘</a>
+                            <a href="#" aria-label="Twitter" style="background-color: var(--accent-color);">🐦</a>
+                            <a href="#" aria-label="Instagram" style="background-color: var(--accent-color);">📷</a>
+                            <a href="#" aria-label="YouTube" style="background-color: var(--accent-color);">📺</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form scroll-reveal-right">
+                    <h3 style="margin-bottom: 25px; color: var(--dark-color);">Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Placeholder) -->
+    <section style="background-color: var(--white); padding: 80px 0;">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>Find Us</h2>
+                <p>Visit us at our location</p>
+            </div>
+            <div class="scroll-reveal" style="height: 400px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                <div style="text-align: center;">
+                    <div style="font-size: 4rem; margin-bottom: 20px;">🗺️</div>
+                    <p>Map Placeholder</p>
+                    <p style="font-size: 1rem; opacity: 0.8;">123 Sports Avenue, Nairobi, Kenya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: 100px 0;">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="sports-grid" style="max-width: 900px; margin: 0 auto;">
+                <div class="event-card scroll-reveal">
+                    <h4>How do I register for activities?</h4>
+                    <p>You can register by filling out the contact form above or visiting our facility during working hours. Our team will guide you through the registration process.</p>
+                </div>
+                <div class="event-card scroll-reveal">
+                    <h4>What age groups do you accept?</h4>
+                    <p>We accept participants of all ages! We have programs tailored for children, teenagers, and adults across all our activities.</p>
+                </div>
+                <div class="event-card scroll-reveal">
+                    <h4>Do I need prior experience?</h4>
+                    <p>No prior experience is needed. We have programs for beginners as well as advanced levels. Our coaches will assess your level and place you accordingly.</p>
+                </div>
+                <div class="event-card scroll-reveal">
+                    <h4>What are the fees?</h4>
+                    <p>Fees vary depending on the activity and program duration. Contact us for detailed pricing information and any available discounts or scholarships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Ngao Sports</h4>
+                    <p>Your premier destination for sports and activities. We are committed to developing talents and building champions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Activities</h4>
+                    <ul>
+                        <li><a href="activities/football.html">Football</a></li>
+                        <li><a href="activities/basketball.html">Basketball</a></li>
+                        <li><a href="activities/skating.html">Skating</a></li>
+                        <li><a href="activities/robotics.html">Robotics</a></li>
+                        <li><a href="activities/chess.html">Chess</a></li>
+                        <li><a href="activities/music.html">Music</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ngao Sports. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
