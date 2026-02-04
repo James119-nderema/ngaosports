@@ -25,9 +25,10 @@ document.querySelectorAll('.nav-link').forEach(link => {
 // ===== Mobile Dropdown Toggle =====
 navItems.forEach(item => {
     const dropdown = item.querySelector('.dropdown');
-    if (dropdown && window.innerWidth <= 768) {
+    if (dropdown) {
         item.querySelector('.nav-link').addEventListener('click', (e) => {
-            if (dropdown) {
+            // Only handle dropdown toggle on mobile
+            if (window.innerWidth <= 768) {
                 e.preventDefault();
                 item.classList.toggle('active');
             }
@@ -109,7 +110,8 @@ if (contactForm) {
         try {
             // Using EmailJS or similar service for client-side email sending
             // For demonstration, we'll use a mailto link approach
-            const mailtoLink = `mailto:james.o.nderema@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(`From: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`)}`;
+            const emailBody = `From: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`;
+            const mailtoLink = `mailto:james.o.nderema@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(emailBody)}`;
             
             // Open email client
             window.location.href = mailtoLink;
@@ -154,14 +156,19 @@ const counterObserver = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             const counter = entry.target;
             const target = parseInt(counter.dataset.target);
-            const increment = target / 100;
+            const duration = 2000; // Animation duration in ms
+            const steps = 60; // Number of animation steps
+            const stepDuration = duration / steps;
+            const increment = target / steps;
             let current = 0;
+            let step = 0;
             
             const updateCounter = () => {
-                if (current < target) {
-                    current += increment;
-                    counter.textContent = Math.ceil(current);
-                    requestAnimationFrame(updateCounter);
+                if (step < steps) {
+                    step++;
+                    current = Math.min(Math.round(increment * step), target);
+                    counter.textContent = current;
+                    setTimeout(updateCounter, stepDuration);
                 } else {
                     counter.textContent = target;
                 }
