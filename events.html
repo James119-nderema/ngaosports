@@ -247,7 +247,7 @@
         window.addEventListener('DOMContentLoaded', async function loadUpcomingEvents() {
             const API_BASE_URL = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
                 ? 'http://127.0.0.1:8000/api'
-                : `${window.location.origin}/api`;
+                : `https://ngao.pythonanywhere.com/api`;
 
             const container = document.getElementById('dynamic-upcoming-events');
             const modal = document.getElementById('registration-modal');
